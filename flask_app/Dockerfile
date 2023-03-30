@@ -1,6 +1,4 @@
-FROM public.ecr.aws/bitnami/node:16.18.1
-COPY . .
-RUN npm install
-# EXPOSE 3000
-CMD [ "node", "index.js" ]
-
+FROM public.ecr.aws/bitnami/python:3.9
+RUN pip install flask
+COPY app.py ./app.py
+CMD ["python", "app.py"]
