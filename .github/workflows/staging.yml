@@ -4,7 +4,7 @@ name: 'Terraform - Staging'
 on:
   push:
     branches:
-    - main
+    - dev-6
     paths: 
     - staging/**
   pull_request:
@@ -45,7 +45,7 @@ jobs:
             rm .terraform
             terraform init
         working-directory: ./staging
-        
+
       - name: Terraform Plan
         id: plan
         if: github.event_name == 'push'
