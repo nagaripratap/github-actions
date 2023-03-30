@@ -4,8 +4,8 @@ on:
  push:
    branches:
    - dev-6
-   paths:
-   - terraform/**
+  # paths:
+  # - terraform/**
      #pull_request:
      #branches:
      # - main
