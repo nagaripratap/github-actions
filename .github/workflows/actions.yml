@@ -5,7 +5,7 @@ on:
    branches:
    - dev-6
    paths:
-    - terraform/**
+   - terraform/**
      #pull_request:
      #branches:
      # - main
